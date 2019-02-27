@@ -1,0 +1,45 @@
+.tweets__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include md {
+    display: none;
+  }
+}
+
+.twitter-tweet {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  width: 328px!important;
+
+  @include lg {
+    width: 430px!important;
+  }
+}
+
+.tweets__wrapper {
+  @include md {
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @include lg {
+    height: 1200px;
+    align-content: space-between;
+  }
+}
+
+.tweets__container_desktop {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}

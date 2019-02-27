@@ -1,0 +1,94 @@
+.books {
+  color: #ffffff;
+  margin-top: 350px;
+  text-align: center;
+
+  @include md {
+    text-align: left;
+    margin-top: 50px;
+    padding-bottom: 150px;
+    background-image: url("#{$path}messengers.svg");
+    background-repeat: no-repeat;
+    background-position: 325px 224px;
+  }
+
+  @include lg {
+    background-size: 550px auto;
+    background-position: 750px 385px;
+  }
+}
+
+.books__wrapper {
+  @include md {
+    width: 330px;
+    margin: 0 0 0 auto;
+  }
+
+  @include lg {
+    width: 550px;
+  }
+}
+
+.books__title {
+  font-weight: 500;
+  line-height: 34px;
+  font-size: 32px;
+  margin-bottom: 20px;
+
+  @include md {
+    font-size: 30px;
+  }
+
+  @include lg {
+    font-size: 64px;
+    line-height: 67px;
+  }
+}
+
+.books__description {
+  line-height: 21px;
+  margin-bottom: 30px;
+
+  &_desktop {
+    display: none;
+
+    @include lg {
+      display: block;
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &_mobile {
+    @include lg {
+      display: none;
+    }
+  }
+}
+
+.books_download {
+  display: none;
+
+  @include md {
+    display: inline;
+  }
+
+  @include lg {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.books__bold {
+  font-weight: bold;
+}
+
+.books__button {
+  margin-bottom: 50px;
+}
+
+.books__download-link {
+  color: #ffffff;
+  text-decoration: underline;
+}

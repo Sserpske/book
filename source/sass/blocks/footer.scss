@@ -1,0 +1,155 @@
+.footer {
+  background-color: #ffffff;
+  font-size: 12px;
+  padding-bottom: 20px;
+
+  @include md {
+    font-size: 14px;
+  }
+
+  @include lg {
+    font-size: 20px;
+  }
+}
+
+.footer__block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:first-child {
+    @include md {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+
+  &:last-child {
+    @include md {
+      align-items: flex-end;
+    }
+
+    @include lg {
+      flex-direction: row;
+    }
+  }
+}
+
+.footer__social-link {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &_fb {
+    background-image: url("#{$path}logo-fb.svg");
+    width: 5px;
+    height: 13px;
+
+    @include lg {
+      width: 6px;
+      height: 16px;
+    }
+  }
+
+  &_tw {
+    background-image: url("#{$path}logo-tw.svg");
+    width: 16px;
+    height: 13px;
+
+    @include lg {
+      width: 19px;
+      height: 16px;
+    }
+  }
+
+  &_ig {
+    background-image: url("#{$path}logo-ig.svg");
+    width: 13px;
+    height: 13px;
+
+    @include lg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &_yt {
+    background-image: url("#{$path}logo-yt.svg");
+    width: 18.65px;
+    height: 13px;
+
+    @include lg {
+      width: 22.96px;
+      height: 16px;
+    }
+  }
+}
+
+.footer__social {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @include md {
+    margin-bottom: 3px;
+    margin-left: 10px;
+    order: 2;
+  }
+}
+
+.footer__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.footer__email {
+  @include md {
+    margin-right: 10px;
+  }
+}
+
+.footer__copyright {
+  @include md {
+    order: 1;
+  }
+}
+
+.footer__wrapper {
+  @include md {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__vbar {
+  display: none;
+  width: 1px;
+  height: 15px;
+  background-color: #000000;
+  margin-right: 10px;
+
+  @include lg {
+    height: 22px;
+  }
+
+  &_tablet {
+    @include md {
+      display: inline;
+    }
+  }
+
+  &_desktop {
+    @include lg {
+      display: inline;
+      margin-left: 10px;
+    }
+  }
+}

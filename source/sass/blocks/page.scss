@@ -1,0 +1,20 @@
+.page__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("#{$path}bg-books-mobile2.png"), url("#{$path}bg-item1.png"), linear-gradient(180deg, #3E95F3 21.81%, #FEEBF2 147.92%);
+  background-repeat: no-repeat;
+  background-position: center 81px, calc(50% - 112px) 570px, 0 0;
+  background-size: 310px auto, auto, contain;
+
+  @include md {
+    background-position: calc(50% - 220px) 19px, calc(50% - 112px) 570px, 0 0;
+    background-size: 450px auto, auto, contain;
+  }
+
+  @include lg {
+    background-position: calc(50% - 320px) 19px, calc(50% - 112px) 570px, 0 0;
+    background-size: 700px auto, auto, contain;
+  }
+}

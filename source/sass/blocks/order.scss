@@ -1,0 +1,110 @@
+.order {
+  background-color: #ffffff;
+  text-align: center;
+
+  @include md {
+    text-align: left;
+  }
+}
+
+.order__outer-wrapper {
+  background-image: url("#{$path}bg-apple-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  padding-bottom: 100px;
+
+  @include md {
+    background-image: url("#{$path}bg-apple-tablet.png"), url("#{$path}messengers.svg");
+    background-position: 20px 30px, 335px 175px;
+    background-size: 388px auto, auto;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  @include lg {
+    background-image: url("#{$path}bg-apple-desktop.png"), url("#{$path}messengers.svg");
+    background-position: 20px 30px, 700px 228px;
+    background-size: 650px auto, 550px auto;
+    padding-bottom: 200px;
+  }
+}
+
+.order__call {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 10px;
+
+  @include md {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  @include lg {
+    font-size: 64px;
+    margin-bottom: 30px;
+  }
+}
+
+.order__text {
+  font-size: 16px;
+  padding: 0 70px;
+  margin-bottom: 20px;
+
+  &_mobile {
+    @include md {
+      display: none;
+    }
+  }
+
+  &_desktop {
+    display: none;
+
+    @include md {
+      display: inline;
+      font-size: 14px;
+      padding: 0;
+    }
+
+    @include lg {
+      font-size: 20px;
+    }
+  }
+}
+
+
+.order__wrapper {
+  padding-top: 300px;
+
+  @include md {
+    width: 330px;
+    padding-top: 100px;
+    margin-left: auto;
+  }
+
+  @include lg {
+    width: 600px;
+  }
+}
+
+.order__text-link {
+  text-decoration: underline;
+}
+
+.order__amazon {
+  @include md {
+    margin-top: 70px;
+  }
+
+  @include lg {
+    margin-top: 110px;
+    font-size: 20px;
+  }
+}
+
+.order__amazon-link {
+  text-decoration: underline;
+}
+
+.order__button {
+  margin-bottom: 20px;
+}

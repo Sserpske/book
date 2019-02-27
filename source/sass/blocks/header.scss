@@ -1,0 +1,92 @@
+.header__nav-link {
+  font-weight: 900;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  padding: 8px 20px;
+
+  @include lg {
+    font-size: 18px;
+  }
+
+  &_tablet {
+    display: none;
+    border: none;
+
+    @include md {
+      display: inline;
+
+      &:hover {
+        border: 1px solid #FFFFFF;
+        padding: 8px 19px;
+      }
+    }
+  }
+}
+
+.header__nav {
+  @include lg {
+    margin-left: auto;
+    margin-right: 100px;
+  }
+}
+
+.header__social {
+  display: none;
+
+  @include lg {
+    display: flex;
+    flex-direction: row;
+    width: 185px;
+    justify-content: space-between;
+  }
+}
+
+.header__social-link {
+  width: 29px;
+  height: 29px;
+  background-repeat: no-repeat;
+
+  &_tw {
+    background-image: url("#{$path}logo-tw-header.svg");
+  }
+
+  &_fb {
+    background-image: url("#{$path}logo-fb-header.svg");
+  }
+
+  &_ig {
+    background-image: url("#{$path}logo-ig-header.svg");
+  }
+
+  &_yt {
+    background-image: url("#{$path}logo-yt-header.svg");
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.header__link {
+  width: 88px;
+  height: 16px;
+  background-image: url("#{$path}logo-amo-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include md {
+    width: 98px;
+    height: 16px;
+  }
+
+  @include lg {
+    width: 175px;
+    height: 32px;
+  }
+}
