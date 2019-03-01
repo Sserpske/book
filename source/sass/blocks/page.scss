@@ -5,12 +5,12 @@
   z-index: -1;
   background-image: url("#{$path}bg-books-mobile2.png"), url("#{$path}bg-item1.png"), linear-gradient(180deg, #3E95F3 21.81%, #FEEBF2 147.92%);
   background-repeat: no-repeat;
-  background-position: center 81px, calc(50% - 112px) 570px, 0 0;
-  background-size: 310px auto, auto, contain;
+  background-position: calc(50% - 44px) 69px, calc(50% - 112px) 570px, 0 0;
+  background-size: 329px auto, auto, contain;
 
   @include md {
-    background-position: calc(50% - 220px) 19px, calc(50% - 112px) 570px, 0 0;
-    background-size: 450px auto, auto, contain;
+    background-position: calc(50% - 224px) 33px, calc(50% - 112px) 570px, 0 0;
+    background-size: 447px auto, auto, contain;
   }
 
   @include lg {

@@ -1,15 +1,16 @@
 .books {
   color: #ffffff;
-  margin-top: 350px;
+  padding-top: 395px;
   text-align: center;
+  margin-bottom: 60px;
 
   @include md {
     text-align: left;
-    margin-top: 50px;
-    padding-bottom: 150px;
+    padding-top: 104px;
+    padding-bottom: 83px;
     background-image: url("#{$path}messengers.svg");
     background-repeat: no-repeat;
-    background-position: 325px 224px;
+    background-position: 329px 324px;
   }
 
   @include lg {
@@ -31,12 +32,13 @@
 
 .books__title {
   font-weight: 500;
-  line-height: 34px;
-  font-size: 32px;
-  margin-bottom: 20px;
+  line-height: 1.05;
+  font-size: 8.55vw;
+  margin-bottom: 14px;
 
   @include md {
     font-size: 30px;
+    margin-bottom: 11px;
   }
 
   @include lg {
@@ -46,8 +48,15 @@
 }
 
 .books__description {
-  line-height: 21px;
-  margin-bottom: 30px;
+  line-height: 5.7vw;
+  margin-bottom: 5vw;
+  font-size: 3.7vw;
+
+  @include md {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 65px;
+  }
 
   &_desktop {
     display: none;
@@ -72,6 +81,7 @@
 
   @include md {
     display: inline;
+    letter-spacing: -0.1px;
   }
 
   @include lg {
@@ -82,10 +92,6 @@
 
 .books__bold {
   font-weight: bold;
-}
-
-.books__button {
-  margin-bottom: 50px;
 }
 
 .books__download-link {
