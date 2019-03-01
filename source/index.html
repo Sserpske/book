@@ -6,22 +6,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Book</title>
+	<!--<link href="css/jquery.easy_slides.css" rel="stylesheet" type="text/css" />-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/jquery.easy_slides.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
 	<div class="page__background"></div>
 	<div class="page__inner">
-		<header class="header container">
-			<a href="#" class="header__link"><span class="visually-hidden">Official Page</span></a>
-			<nav class="header__nav">
-				<a href="#" class="header__nav-link">Get the ebook</a>
-				<a href="#" class="header__nav-link header__nav-link_tablet">What's inside</a>
-			</nav>
-			<div class="header__social">
-				<a href="#" class="header__social-link header__social-link_tw"><span class="visually-hidden">twitter</span></a>
-				<a href="#" class="header__social-link header__social-link_fb"><span class="visually-hidden">facebook</span></a>
-				<a href="#" class="header__social-link header__social-link_ig"><span class="visually-hidden">instagram</span></a>
-				<a href="#" class="header__social-link header__social-link_yt"><span class="visually-hidden">youtube</span></a>
+		<header class="header">
+			<div class="header__wrapper container">
+				<a href="#" class="header__link"><span class="visually-hidden">Official Page</span></a>
+				<nav class="header__nav">
+					<a href="#" class="header__nav-link header__nav-link_mobile header__nav-link_active">Get it now</a>
+					<a href="#" class="header__nav-link header__nav-link_tablet header__nav-link_active">Download the book now</a>
+					<a href="#" class="header__nav-link header__nav-link_tablet">What's inside?</a>
+				</nav>
+				<div class="header__social">
+					<a href="#" class="header__social-link header__social-link_tw"><span class="visually-hidden">twitter</span></a>
+					<a href="#" class="header__social-link header__social-link_fb"><span class="visually-hidden">facebook</span></a>
+					<a href="#" class="header__social-link header__social-link_ig"><span class="visually-hidden">instagram</span></a>
+					<a href="#" class="header__social-link header__social-link_yt"><span class="visually-hidden">youtube</span></a>
+				</div>
 			</div>
 		</header>
 		<main class="main">
@@ -30,7 +36,7 @@
 					<h2 class="books__title">The Messaging Revolution is Here.</h2>
 					<p class="books__description books__description_mobile">Find out how <span class="books__bold">Messenger-Based Sales</span> is overturning conventional sales advice and threatening the reign of phone and email.</p>
 					<p class="books__description books__description_desktop">All over the world, forward-thinking sales teams are heralding the new era of <span class="books__bold">Messenger-Based Sales.</span> Find out how the humble messaging app is overturning conventional sales advice and threatening the reign of phone and email.</p>
-					<p class="books_download"><a class="books__download-link" href="#">Download the book</a> via your favorite messenger or email.</p>
+					<p class="books_download"><a class="books__download-link" href="#">Download it</a> via your favorite messenger or email.</p>
 					<a href="#" class="books__button yellow-button">Download the book</a>
 				</div>
 			</section>
@@ -39,25 +45,51 @@
 				<div class="reason__wrapper">
 					<div class="reason__text-wrapper">
 						<h3 class="reason__subtitle reason__subtitle_mobile">A Totally New Way of Selling</h3>
-						<p class="reason__text">The world of sales is on the verge of the greatest change in recent history. Messaging is on the rise, customers are in control and expectations are higher than ever. Yet many entrepreneurs and sales managers are completely unequipped for how to deal with what's coming next, let alone how to benefit from it.</p>
+						<p class="reason__text">The world of sales is on the verge of the greatest change in recent history. Messag-<br>ing is on the rise, customers are in control and expectations are higher than ever. Yet many entrepreneurs and sales managers are completely unequipped for how to deal with what's coming next, let alone how to benefit from it.</p>
 					</div>
 					<div class="reason__text-wrapper">
-						<h3 class="reason__subtitle">What you'll learn from this book:</h3>
-						<p class="reason__text">
+						<h3 class="reason__subtitle reason__subtitle_mobile reason__subtitle_second">What You'll Learn in this Book</h3>
+						<h3 class="reason__subtitle reason__subtitle_tablet">What you'll learn in this book:</h3>
 						<ul class="reason__list">
-							<li class="reason__list-item">Why popular strategies keep letting you down </li>
-							<li class="reason__list-item">What leads really think about your sales tactics</li>
-							<li class="reason__list-item">How messengers & chatbots disrupt the status quo</li>
-							<li class="reason__list-item">Why Messenger-Based Sales isn’t just for B2C companies</li>
-							<li class="reason__list-item">How to make messaging apps your new secret weapon</li>
+							<li class="reason__list-item">Why popular strategies let you down</li>
+							<li class="reason__list-item">What leads think about your sales tactics</li>
+							<li class="reason__list-item">How messengers disrupt the status quo</li>
+							<li class="reason__list-item">Why Messenger-Based Sales is for B2B</li>
+							<li class="reason__list-item">How to add messaging to your arsenal</li>
 						</ul>
-						</p>
 					</div>
 				</div>
 			</section>
-			<section class="feedback container">
+			<section class="feedback">
 				<h2 class="feedback__title">What People Are Saying <span class="feedback__title-tablet">About the Book</span></h2>
-				<div class="feedback__temp"></div>
+				<div class="slider">
+					<div class="feedback__item">
+						<p class="feedback__text">
+							“Prospective customers want to be courted on their terms based on their buying journey stage. Messaging apps are the emerging channel that furthers this goal but it has to be strategically placed within their journey.“</p>
+						<div class="feedback__author feedback__author_1">
+							<span class="feedback__name">Joti Balani</span>
+							<span class="feedback__company">Managing Director, Freshriver.ai</span>
+						</div>
+					</div>
+					<div class="feedback__item">
+						<p class="feedback__text">
+							“Delivered is a new vision for what a modern sales team can, and should, be doing now. It presents a simple game-changing approach every business can implement today to win more sales faster.” </p>
+						<div class="feedback__author feedback__author_2">
+							<span class="feedback__name">Louis Carroll</span>
+							<span class="feedback__company">Instagram’s marketer</span>
+						</div>
+					</div>
+					<div class="feedback__item">
+						<p class="feedback__text">
+							“Delivered is a new vision for what a modern sales team can, and should, be doing now. It presents a simple game-changing approach every business can implement today to win more sales faster.” </p>
+						<div class="feedback__author feedback__author_3">
+							<span class="feedback__name">Louis Carroll</span>
+							<span class="feedback__company">Instagram’s marketer</span>
+						</div>
+					</div>
+					<div class="next_button"></div>
+					<div class="prev_button"></div>
+				</div>
 			</section>
 			<section class="tweets container">
 				<h2 class="tweets__title">More Praise for Delivered</h2>
@@ -86,8 +118,8 @@
 				<div class="order__outer-wrapper container">
 					<div class="order__wrapper">
 						<p class="order__call">Get it Now</p>
-						<p class="order__text order__text_mobile">Click to get the ebook via your favorite messenger!</p>
-						<p class="order__text order__text_desktop"><a href="#" class="order__text-link">Download the book</a> via your favorite messenger or email.</p>
+						<p class="order__text order__text_mobile">Click to get the ebook via&nbsp;your favorite messenger!</p>
+						<p class="order__text order__text_tablet"><a href="#" class="order__text-link">Download <span class="tablet">it</span><span class="desktop">the book</span></a> via your favorite messenger or email.</p>
 						<a href="#" class="order__button yellow-button">Download the book</a>
 						<p class="order__amazon">Also available on <a href="#" class="order__amazon-link">Amazon</a></p>
 					</div>
@@ -112,10 +144,29 @@
 						<a href="tel:+1 (415) 689-3152" class="footer__phone">+1 (415) 689-3152</a>
 					</div>
 					<span class="footer__vbar footer__vbar_desktop"></span>
-					<a href="https://www.amocrm.com/privacy/" target="_blank" class="footer__privacy">Privacy policy</a>
+					<a href="https://www.amocrm.com/privacy/" target="_blank" class="footer__privacy">Privacy Policy</a>
 				</div>
 			</div>
 		</footer>
 	</div>
+	<script>
+      $(document).ready(function() {
+        $('.slider').EasySlides({
+          'autoplay': false,
+          'show': 3,
+          'delayaftershow': 700,
+          'touchevents': true
+        })
+      });
+
+      window.onscroll = function() {
+        var scrolled = window.pageYOffset;
+        if (scrolled > 1) {
+          $('.header').css({'box-shadow': '0px 4px 10px rgba(0, 0, 0, 0.25)', 'position': 'fixed'});
+		} else {
+          $('.header').css({'box-shadow': 'none', 'position': 'absolute'});
+		}
+      }
+	</script>
 </body>
 </html>

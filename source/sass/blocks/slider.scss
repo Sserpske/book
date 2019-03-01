@@ -1,0 +1,243 @@
+/*********************************/
+
+.slider {
+    position: relative;
+    width: 315px;
+    height: 218px;
+    margin: 0 auto;
+    user-select: none;
+
+
+
+    @include md {
+        height: 227px;
+    }
+
+    @include lg {
+        height: 321px;
+    }
+}
+
+.slider > * {
+    transition: ease all 0.5s;
+}
+
+.slider > div,
+.slider .hidden {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    z-index: 0;
+    overflow: hidden;
+
+    @include md {
+        left: 50%;
+    }
+}
+
+.slider .active {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+    @include md {
+        width: 387px;
+        left: calc(50% - 194px);
+    }
+
+    @include lg {
+        width: 660px;
+        left: calc(50% - 330px);
+        font-size: 20px;
+        line-height: 29px;
+    }
+}
+
+.slider .prev1,
+.slider .next1 {
+    opacity: 0.3;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    width: 315px;
+    margin-left: -120%;
+
+    @include md {
+        top: 0;
+        margin-left: -108%;
+        transform: scale(0.8);
+        border-radius: 24px;
+        width: 387px;
+    }
+
+    @include lg {
+        height: 239px;
+        width: 492px;
+        top: 12%;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+.slider .next1 {
+    margin-left: 120%;
+
+    @include md {
+        margin-left: -15%;
+    }
+
+    @include lg {
+        margin-left: -7%;
+    }
+}
+
+.slider .prev2,
+.slider .next2 {
+    opacity: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    width: 15%;
+    height: 15%;
+    z-index: 8;
+}
+
+.slider .next2 {
+    margin-left: 35%;
+}
+
+.slider .prev3,
+.slider .next3 {
+    opacity: 0.5;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -50%;
+    width: 7%;
+    height: 7%;
+    z-index: 7;
+}
+
+.slider .next3 {
+    margin-left: 43%;
+}
+
+.slider .prev4,
+.slider .next4 {
+    opacity: 0.3;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -40%;
+    width: 3%;
+    height: 3%;
+    z-index: 6;
+}
+
+.slider .next4 {
+    margin-left: 37%;
+}
+
+.slider .prev5,
+.slider .next5 {
+    opacity: 0.1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -15%;
+    width: 2%;
+    height: 2%;
+    z-index: 5;
+}
+
+.slider .next5 {
+    margin-left: 13%;
+}
+
+.next_button,
+.prev_button {
+    position: absolute;
+    left: 108% !important;
+    top: 0!important;
+    margin: -15px 0 0 -25px !important;
+    width: 25px !important;
+    height: 250px !important;
+    opacity: 1!important;
+    z-index: 50 !important;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+
+    @media (max-width: 374px) {
+        display: none;
+    }
+
+    @include md {
+        left: 158%!important;
+        width: 30px!important;
+        height: 227px !important;
+        top: 13px!important;
+    }
+
+    @include lg {
+        height: 321px!important;
+    }
+    
+}
+
+.prev_button {
+    position: absolute;
+    left: 1% !important;
+    background-image: url("#{$path}arrow-left-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 108px;
+
+    @include md {
+        left: -52% !important;
+        background-image: url("#{$path}arrow-left-tablet.svg");
+        background-position: 5px 95px;
+    }
+
+    @include lg {
+        background-position: 0 150px;
+    }
+}
+
+.next_button {
+    background-image: url("#{$path}arrow-right-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 108px;
+    
+    @include md {
+        background-image: url("#{$path}arrow-right-tablet.svg");
+        background-position: 6px 95px;
+    }
+
+    @include lg {
+        background-position: 80px 150px;
+    }
+}
+
+.next_button:hover,
+.prev_button:hover {
+    opacity: 1 !important;
+}
+
+.next_button:after,
+.prev_button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    margin-top: -10px;
+}

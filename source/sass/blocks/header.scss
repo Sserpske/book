@@ -1,32 +1,62 @@
+.header {
+  position: absolute;
+  background-color: #3E95F3;
+  width: 100%;
+  z-index: 100;
+}
+
 .header__nav-link {
-  font-weight: 900;
+  font-weight: 500;
   font-size: 12px;
   color: #ffffff;
   text-transform: uppercase;
-  border: 1px solid #FFFFFF;
   border-radius: 4px;
-  padding: 8px 20px;
+  padding: 6px 23px 5px 24px;
+  margin-right: 20px;
+
+  @include md {
+    margin-right: 0;
+    padding: 11px 19px 11px 11px;
+    margin-top: 5px;
+    border: 1px solid #3E95F3;
+  }
 
   @include lg {
     font-size: 18px;
   }
 
+  &_active {
+    border: 1px solid #FFFFFF;
+
+    @include md {
+      padding: 11px 24px 11px 23px;
+    }
+  }
+
+  &_mobile {
+    @include md {
+      display: none;
+    }
+  }
+
   &_tablet {
     display: none;
-    border: none;
 
     @include md {
       display: inline;
 
       &:hover {
         border: 1px solid #FFFFFF;
-        padding: 8px 19px;
       }
     }
   }
 }
 
 .header__nav {
+  @include md {
+    padding-top: 3px;
+  }
+
   @include lg {
     margin-left: auto;
     margin-right: 100px;
@@ -66,23 +96,30 @@
   }
 }
 
-.header {
+.header__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  @include md {
+    padding-top: 22px;
+  }
 }
 
 .header__link {
-  width: 88px;
+  width: 89px;
   height: 16px;
   background-image: url("#{$path}logo-amo-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  margin-left: 20px;
 
   @include md {
-    width: 98px;
-    height: 16px;
+    width: 100px;
+    height: 19px;
+    margin-left: 0;
   }
 
   @include lg {

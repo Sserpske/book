@@ -8,21 +8,22 @@
 }
 
 .order__outer-wrapper {
-  background-image: url("#{$path}bg-apple-mobile.png");
+  background-image: url("#{$path}bg-apple.png");
   background-repeat: no-repeat;
-  background-position: center 30px;
-  padding-bottom: 100px;
+  background-position: 23px 49px;
+  padding-bottom: 72px;
+  background-size: 358px auto;
 
   @include md {
-    background-image: url("#{$path}bg-apple-tablet.png"), url("#{$path}messengers.svg");
-    background-position: 20px 30px, 335px 175px;
+    background-image: url("#{$path}bg-apple.png"), url("#{$path}messengers.svg");
+    background-position: -18px 43px, 329px 175px;
     background-size: 388px auto, auto;
     background-repeat: no-repeat;
     padding-bottom: 100px;
   }
 
   @include lg {
-    background-image: url("#{$path}bg-apple-desktop.png"), url("#{$path}messengers.svg");
+    background-image: url("#{$path}bg-apple.png"), url("#{$path}messengers.svg");
     background-position: 20px 30px, 700px 228px;
     background-size: 650px auto, 550px auto;
     padding-bottom: 200px;
@@ -32,11 +33,12 @@
 .order__call {
   font-size: 28px;
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   @include md {
     font-size: 30px;
     font-weight: 500;
+    margin-bottom: 13px;
   }
 
   @include lg {
@@ -47,7 +49,7 @@
 
 .order__text {
   font-size: 16px;
-  padding: 0 70px;
+  padding: 0 50px;
   margin-bottom: 20px;
 
   &_mobile {
@@ -56,13 +58,14 @@
     }
   }
 
-  &_desktop {
+  &_tablet {
     display: none;
 
     @include md {
       display: inline;
       font-size: 14px;
       padding: 0;
+      letter-spacing: -0.1px;
     }
 
     @include lg {
@@ -73,11 +76,11 @@
 
 
 .order__wrapper {
-  padding-top: 300px;
+  padding-top: 353px;
 
   @include md {
-    width: 330px;
-    padding-top: 100px;
+    width: 329px;
+    padding-top: 108px;
     margin-left: auto;
   }
 
@@ -92,7 +95,7 @@
 
 .order__amazon {
   @include md {
-    margin-top: 70px;
+    margin-top: 74px;
   }
 
   @include lg {
@@ -106,5 +109,5 @@
 }
 
 .order__button {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
